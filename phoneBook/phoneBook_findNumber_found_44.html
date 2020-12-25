@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="JSON/createContacts.js"></script>
+<script src="JSON/register.js"></script>
+
+<link rel="stylesheet" href="style/styles.css">
+
+</head>
+<body>
+
+  
+
+<div class="flexbox-container">
+  <div class="flexbox-item flexbox-item-1">
+    <!-----------------------ADD NEW CONTACT FORM---------------------------->
+
+<!--TITLE-->
+<p style="color: rgb(176, 190, 176);font-size: 25px; font-family: monospace;">My Contacts</p>
+
+<!-------------------------------ADD CONTACTS; USER INPUT FORM------------------------------->
+<form action="" style="color: rgb(140, 151, 140);font-size: 18px; font-family: monospace;" id="usrForm">
+
+<!------------------------------USER: ADD CONTACTS; INPUT FIELDS----------------------------->
+<div>
+  User ID:<value id="id" type="text" name="id" value=""><br>
+  First Name:<input type="text" name="firstName" value="" id="foundName" ><br>
+  Last Name:<input type="text" name="lastName" value=""><br>
+  e-mail:<input type="text" name="email" value=""><br>
+  Mobile:<input type="text" name="number" value="" id="theNumber" ><br>
+  <input name="--------------------------------" type="hidden"><br>
+</div>
+
+<!--RESET AND CLEAR BUTTONS-->
+
+  <div class="controls" style = "position:relative; left:300px; top:10px";>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Clear">
+</div>
+
+</form>
+
+<!--SUBMIT BUTTON-->
+<div style = "position:relative; left:8px; top: 0px";>
+  <button type="submit" id="addContactsBtn" >Add Contacts</button>
+</div>
+
+<!--RESULTS DIV-->
+<div id="results" style="color: rgb(115, 129, 115); font-size: 16px; font-family: monospace;">
+</div>
+  </div>
+  <div class="flexbox-item flexbox-item-2">
+    <!-----------------------PASSWORD LOG-IN---------------------->
+    <p style="color: rgb(54, 58, 54);font-size: 25px; font-family: monospace;">CONTACTS LOG-IN</p>
+
+<form action="/register" id="registration">
+  <input name="email" placeholder="Email" type="text"/>
+  <input name="password" placeholder="Password" type="password" id="pswNumb" minlength="8"/> <!--VALIDATOR-->
+  <input name="confirmation" placeholder="Password (again)" type="password"/>
+  <input name="agreement" type="checkbox"/> I agree
+  <input type="submit" value="Register" id="regSubmit"/>
+  <input type="reset" value="Reset Password"/>
+  
+</form>
+<!--EFFECTS-->
+<p id ="youAreRegistered" style="color: rgb(150, 173, 150);font-size: 40px; font-family: monospace;"></p>
+  </div>
+  <div class="flexbox-item flexbox-item-3">
+    <!--SEARCH CONTACTS BUTTON-->
+    <input type="text" name="Search Contacts" value="" id="searchInputId"><br>
+    <button type="submit" id="searchButton" name="findSubmitBtn">Search Contacts Button</button>
+    
+<form id="foundSubmitid">
+  <div id="returnNumber" style= "position:relative; left:0px; top:80px; color: rgb(143, 155, 143); font-size: 16px; font-family: monospace;">Found Contact Number
+  </div>
+    </div>
+</form>
+    
+</div>
+
+
+</body>
+</html>
