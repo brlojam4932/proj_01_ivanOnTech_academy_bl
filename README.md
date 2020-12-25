@@ -13,3 +13,5 @@ I had version where they worked on their own or with an exixting data base but n
 So my final Project is not so final as I will have to return to it at some point in the future where I can figure it out or maybe I can get some help from you guys.
 
 When you load the page, there is a log-in form that works and one can add conctacts to the phone list. To recall the number, it does not work. It cannot read the data. 
+
+p.s. The CSS folder goes inside the "phonebook" folder.
