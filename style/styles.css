@@ -1,0 +1,43 @@
+
+  body {
+    background-color: rgb(34, 35, 37);
+  }
+
+  span {
+    display: none;
+  }
+
+  .flexbox-container {
+      display: flex;
+      
+    }
+
+    .flexbox-item {
+      width: 400px;
+      margin: 10px;
+      border: 3px solid rgb(124, 42, 42);
+      background-color: rgb(31, 30, 30);
+      
+  }
+
+  .flexbox-item-1 {
+    min-height: 800px;
+    flex-grow: 1;
+    order: 2;
+  }
+
+  .flexbox-item-2 {
+    min-height: 200px;
+    flex-grow: 1;
+    order: 1;
+  }
+
+  .flexbox-item-3 {
+    min-height: 100px;
+    flex-shrink: 0;
+    order: 3;
+  }
+
+  ::placeholder {
+    color:rgb(99, 78, 218)
+  }
